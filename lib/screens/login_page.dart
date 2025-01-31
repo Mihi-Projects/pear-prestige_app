@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // Import the HomeScreen
-import 'register_page.dart'; // Import the RegisterPage
+import 'home_screen.dart';
+import 'register_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -75,13 +75,12 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              // Center the Login Button with custom width
+
               Center(
                 child: Container(
-                  width: 300, // Adjust the width here as needed
+                  width: 300,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigate directly to HomeScreen without validation
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(builder: (context) => HomeScreen()),
@@ -109,9 +108,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 20),
               Center(
                 child: TextButton(
-                  onPressed: () {
-                    // Implement forgot password functionality
-                  },
+                  onPressed: () {},
                   child: Text(
                     'Forgot your password?',
                     style: TextStyle(
@@ -125,7 +122,6 @@ class LoginPage extends StatelessWidget {
               Center(
                 child: TextButton(
                   onPressed: () {
-                    // Navigate to the RegisterPage
                     Navigator.push(
                       context,
                       MaterialPageRoute(

@@ -1,22 +1,22 @@
 import 'package:ecom_app/screens/login_page.dart';
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart'; // Import the HomeScreen if needed
+import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp()); // Use const MyApp()
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key); // Add a const constructor
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pearl & Prestige',
       theme: ThemeData(
-        brightness: Brightness.light, // Light theme
+        brightness: Brightness.light,
         primarySwatch: Colors.deepOrange,
-        fontFamily: 'Roboto', // Set Roboto as the default font family
+        fontFamily: 'Roboto',
         textTheme: const TextTheme(
           displayLarge: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
           displayMedium: TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             color: Colors.black,
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            fontFamily: 'Roboto', // Ensure the app bar uses Roboto
+            fontFamily: 'Roboto',
           ),
         ),
         scaffoldBackgroundColor: Colors.grey[50],
@@ -51,9 +51,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       darkTheme: ThemeData(
-        brightness: Brightness.dark, // Dark theme
+        brightness: Brightness.dark,
         primarySwatch: Colors.deepOrange,
-        fontFamily: 'Roboto', // Set Roboto as the default font family
+        fontFamily: 'Roboto',
         textTheme: const TextTheme(
           displayLarge: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
           displayMedium: TextStyle(fontSize: 48.0, fontWeight: FontWeight.bold),
@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
             color: Colors.white,
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            fontFamily: 'Roboto', // Ensure the app bar uses Roboto
+            fontFamily: 'Roboto',
           ),
         ),
         scaffoldBackgroundColor: const Color.fromARGB(255, 26, 26, 26),
@@ -87,10 +87,9 @@ class MyApp extends StatelessWidget {
           unselectedItemColor: Colors.white70,
         ),
       ),
-      themeMode: ThemeMode
-          .system, // Automatically adjust theme based on system settings (light or dark)
-      home: const LoginPage(), // Your initial page
-      debugShowCheckedModeBanner: false, // Remove the debug banner
+      themeMode: ThemeMode.system,
+      home: const LoginPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

@@ -10,7 +10,7 @@ class MenCollectionPage extends StatefulWidget {
 }
 
 class _MenCollectionPageState extends State<MenCollectionPage> {
-  int _selectedIndex = 1; // Set the default index to Men Collection
+  int _selectedIndex = 1;
 
   final List<Map<String, dynamic>> products = const [
     {
@@ -62,7 +62,6 @@ class _MenCollectionPageState extends State<MenCollectionPage> {
       _selectedIndex = index;
     });
 
-    // Handle navigation based on selected index
     if (index == 0) {
       Navigator.pushReplacement(
         context,
@@ -144,9 +143,7 @@ class _MenCollectionPageState extends State<MenCollectionPage> {
         decoration: BoxDecoration(
           color: theme.scaffoldBackgroundColor,
           borderRadius: BorderRadius.circular(30),
-          border: Border.all(
-              color: Colors.grey, // Border color
-              width: 1.0),
+          border: Border.all(color: Colors.grey, width: 1.0),
         ),
         child: const TextField(
           decoration: InputDecoration(
@@ -168,7 +165,7 @@ class _MenCollectionPageState extends State<MenCollectionPage> {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
-          children: ['All Items', 'Dresses', 'Tops', 'Skirts', 'Pants']
+          children: ['All Items', 'Hoodies', 'T-shirts', 'Trousers', 'Shoes']
               .map((category) => _buildCategoryButton(category))
               .toList(),
         ),

@@ -42,7 +42,6 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // Full Name Input
               TextField(
                 decoration: InputDecoration(
                   labelText: 'Full Name',
@@ -57,7 +56,6 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // Email Input
               TextField(
                 decoration: InputDecoration(
                   labelText: 'Email',
@@ -72,7 +70,6 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              // Password Input
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -88,13 +85,11 @@ class RegisterPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 30),
-              // Center the Register Button with custom width
               Center(
                 child: Container(
-                  width: 300, // Adjust the width here as needed
+                  width: 300,
                   child: ElevatedButton(
                     onPressed: () {
-                      // Navigate back to LoginPage after registration
                       Navigator.pop(context);
                     },
                     style: ElevatedButton.styleFrom(
@@ -120,7 +115,6 @@ class RegisterPage extends StatelessWidget {
               Center(
                 child: TextButton(
                   onPressed: () {
-                    // Navigate back to LoginPage
                     Navigator.pop(context);
                   },
                   child: Text(

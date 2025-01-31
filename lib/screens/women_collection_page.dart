@@ -10,7 +10,7 @@ class WomenCollectionPage extends StatefulWidget {
 }
 
 class _WomenCollectionPageState extends State<WomenCollectionPage> {
-  int _selectedIndex = 1; // Set the default index to Women Collection
+  int _selectedIndex = 1;
 
   final List<Map<String, dynamic>> products = const [
     {
@@ -62,7 +62,6 @@ class _WomenCollectionPageState extends State<WomenCollectionPage> {
       _selectedIndex = index;
     });
 
-    // Handle navigation based on selected index
     if (index == 0) {
       Navigator.pushReplacement(
         context,
@@ -144,9 +143,7 @@ class _WomenCollectionPageState extends State<WomenCollectionPage> {
         decoration: BoxDecoration(
           color: theme.scaffoldBackgroundColor,
           borderRadius: BorderRadius.circular(30),
-          border: Border.all(
-              color: Colors.grey, // Border color
-              width: 1.0),
+          border: Border.all(color: Colors.grey, width: 1.0),
         ),
         child: const TextField(
           decoration: InputDecoration(
